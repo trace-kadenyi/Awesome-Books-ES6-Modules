@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "lato", sans-serif;
+}
+
+.HeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px lightgray solid;
+}
+
+.HeaderContent a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1156px;
+  margin: 0 auto;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navItem {
+  cursor: pointer;
+}
+
+.navItem:first-child {
+  padding-right: 5px;
+  border-right: 2px lightgray solid;
+}
+
+.navItem:nth-child(2) {
+  padding-right: 5px;
+  border-right: 2px lightgray solid;
+}
+
+.title {
+  text-align: center;
+}
+
+.booksList {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.booksList .task {
+  display: flex;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.booksList .task td {
+  padding: 8px 0;
+}
+
+.booksList .task .del {
+  justify-items: flex-end;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  background-color: rgba(135, 152, 168, 0.699);
+  text-transform: uppercase;
+}
+
+.booksList .task .del:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+.booksList .task:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.booksList .task:nth-child(odd):hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 50px auto 0;
+}
+
+.inputs input {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.inputs .add {
+  width: 100px;
+  align-self: flex-end;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+}
+
+.inputs .add:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+.contact-text {
+  margin: 50px auto 20px;
+  max-width: 410px;
+}
+
+.contactlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  border: 2px lightgray solid;
+  padding: 10px;
+  width: 100%;
+}
+
+footer .span {
+  margin-left: 20px;
+}
+
+#ListSection,
+#AddNewSection {
+  height: 85vh;
+  transform: translate(0%, 20%);
+}
+
+#ListSection .title,
+#AddNewSection .title {
+  margin-bottom: 80px;
+  font-size: 40px;
+}
+
+#AddNewSection {
+  display: none;
+}
+
+#ContactSection {
+  display: none;
+  height: 85vh;
+  top: -50%;
+  transform: translate(0%, 20%);
+}
+
+#ContactSection .contact-title {
+  margin-bottom: 80px;
+  font-size: 40px;
+}
+
+#ListSection.active {
+  display: block;
+}
+
+#ContactSection.active {
+  display: block;
+}
+
+#AddNewSection.active {
+  display: block;
+}
+
+#ListSection.close {
+  display: none;
+}
+
+#ContactSection.close {
+  display: none;
+}
+
+#AddNewSection.close {
+  display: none;
+}
+
+.datetime {
+  position: absolute;
+  right: 40px;
+  margin-top: 5px;
+}
