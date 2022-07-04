@@ -10,7 +10,7 @@ class AwesomeBooks {
   }
 
   // Check If theres Tasks In Local Storge
-  checkLocal() {
+  checkLocal = () => {
     if (localStorage.getItem('tasks')) {
       this.arrayOfTasks = JSON.parse(localStorage.getItem('tasks'));
     }
@@ -68,7 +68,7 @@ class AwesomeBooks {
   };
 
   // click on task Element
-  remover() {
+  remover = () => {
     taskDiv.addEventListener('click', (e) => {
       // remove Element from page
       if (e.target.classList.contains('del')) {
@@ -97,7 +97,7 @@ class AwesomeBooks {
   };
 
   // Add task
-  handlesubmit() {
+  handlesubmit = () => {
     Add.onclick = () => {
       if (input.value !== '' && author.value !== '') {
         this.addTaskToArray(input.value, author.value); // Add task To Array of Tasks
