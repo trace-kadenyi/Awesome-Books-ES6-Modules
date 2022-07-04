@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books - ES6 Modules Version</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--Header section-->
+    <header id="header">
+      <div class="container">
+        <div class="HeaderContent">
+          <a href="#" class="logo">Awesome Books</a>
+          <nav id="nav">
+            <ul class="navItems">
+              <li class="navItem list"><span>List</span></li>
+              <li class="navItem AddNew"><span>Add new</span></li>
+              <li class="navItem contact"><span>Contact</span></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--End of Header section-->
+    <section>
+      <div class="datetime"></div>
+    </section>
+    <!--List section-->
+    <section id="ListSection">
+      <div class="container">
+        <h1 class="title">All awesome books</h1>
+        <table class="booksList" id="list"></table>
+      </div>
+    </section>
+    <!--End of List section-->
+    <!--Add new section-->
+    <section id="AddNewSection">
+      <div class="container">
+        <h2 class="title">Add a new book</h2>
+        <form class="inputs">
+          <input
+            type="text"
+            id="title"
+            placeholder="Title"
+            name="title"
+            required
+          />
+          <input
+            type="text"
+            id="Author"
+            placeholder="Author"
+            name="Author"
+            required
+          />
+          <button class="add" type="button">Add</button>
+        </form>
+      </div>
+    </section>
+    <!--End of Add new section-->
+    <!--Start of contact page-->
+    <section id="ContactSection">
+      <div class="container">
+        <div class="contactContent">
+          <h2 class="contact-title">Contact Information</h2>
+          <p class="contact-text">
+            Do you have any questions or you just want to say "Hello"? You
+            can reach out to us!
+          </p>
+          <ul class="contactlist">
+            <li class="listc">Our e-mail mail@gmail.com</li>
+            <li class="listc">Our Phone number 0026546126541</li>
+            <li class="listc">Our address Streetname 22, 6465 city,Country</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--End of Contact section -->
+    <!--Footer section-->
+    <footer>
+      <div class="container">
+        <span class="span">Copyright...</span>
+      </div>
+    </footer>
+    <!--End of Footer section-->
+    <script type="module" src="script/index.js"></script>
+  </body>
+</html>
