@@ -1,5 +1,4 @@
-// Add a single page navigation
-export const handleSinglePageNavigation = () => {
+const handleSinglePageNavigation = () => {
   const navItems = Array.from(document.querySelectorAll('.navItem'));
   const ListSection = document.querySelector('#ListSection');
   const AddNewSection = document.querySelector('#AddNewSection');
@@ -31,3 +30,5 @@ export const handleSinglePageNavigation = () => {
     });
   });
 };
+
+export default handleSinglePageNavigation;
